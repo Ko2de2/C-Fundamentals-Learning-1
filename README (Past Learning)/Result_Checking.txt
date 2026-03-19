@@ -1,0 +1,62 @@
+(31/1/2026)
+Concepts used :
+- Conditional
+- Exception Handling
+- Methods with params
+
+[Version 1]
+using System.Numerics;
+using System.Threading.Tasks.Sources;
+using System.Linq;
+using System.Runtime.InteropServices;
+
+internal class Program
+{
+    private static void Main(string[] args)
+    {
+        bool STOP = false;
+        double[] scores = new double[6];
+        int i = 0;
+
+        Console.WriteLine("Please input six scores!");
+        while (STOP == false)
+        {
+            Console.WriteLine("Input the score: ");
+            try
+            {
+                scores[i] = Convert.ToDouble(Console.ReadLine());
+                i++;
+                if (i == 6)
+                {
+                    STOP = true;
+                }
+            }
+            catch (FormatException e)
+            {
+                Console.WriteLine("Score is not a letter!");
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine("Something is wrong!");
+            }
+        }
+        Analyze_score(scores);
+        static void Analyze_score(double[] scores)
+        {
+            double Total_Score = 0;
+            foreach (double score in scores)
+            {
+                Total_Score += score;
+            }
+
+            double Average_Score = Total_Score / scores.Length;
+            double Highest_Score = scores.Max();
+
+            Console.WriteLine($"Average Score : {Average_Score}");
+            Console.WriteLine($"Highest Score : {Highest_Score}");
+
+            string Class_Status = (Average_Score >= 75) ? "Passed" : "Failed";
+            Console.WriteLine($"Class Status: {Class_Status}");
+        }
+    }
+}

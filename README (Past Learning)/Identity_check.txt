@@ -1,0 +1,59 @@
+(29/1/2026)
+ChatGPT Prompt
+Concepts Used :
+- Switch
+- Logical Operator (OR & AND)
+
+internal class Program
+{
+    private static void Main(string[] args)
+    {
+        Console.WriteLine("Hello, welcome to our five star school!");
+        Console.WriteLine("Please give us your name: ");
+
+        string name = Console.ReadLine()!;
+
+        Console.WriteLine("Next, give us your age please: ");
+
+        int age;
+        int.TryParse(Console.ReadLine(), out age);
+
+        Console.WriteLine("Now give us your profesion: ");
+
+        string profesion = Console.ReadLine()!;
+        profesion = profesion.Trim().ToLower();
+
+        switch (profesion)
+        {
+            case "student" :
+                Console.WriteLine("Welcome dear student!");
+                break;
+            case "teacher":
+                Console.WriteLine("Welcome dear teacher!");
+                break;
+            case "guest":
+                Console.WriteLine("Welcome dear guest!");
+                break;
+            default:
+                Console.WriteLine($"Welcome dear {profesion}");
+                break;
+
+        }
+        if (profesion == "student" && age >= 18)
+        {
+            Console.WriteLine("You get full access here");
+        }
+        else if (profesion == "teacher" && age >= 18)
+        {
+            Console.WriteLine("You get full access here");
+        }
+        else if (profesion == "guest" || age <= 18)
+        {
+            Console.WriteLine("You get limited access here");
+        }
+        else
+        {
+            Console.WriteLine("Just do anything you want" +  name + ", I do not really care");
+        }
+    }
+}

@@ -1,0 +1,70 @@
+(31/1/2026)
+Concepts Used:
+- Foreach
+- Methods
+- Arrays
+
+Type 1
+internal class Program
+{
+    private static void Main(string[] args)
+    {
+        int[] Student_Scores = { 85, 90, 100, 70, 65, 40, 78 };
+        Display_Scores(Student_Scores);
+        Calculate_Average(Student_Scores);
+        Console.WriteLine("So are you guys satisfied with it?");
+    }
+    static void Display_Scores(int[] i)
+    {
+        Console.WriteLine("Here is the list of the students scores");
+        foreach (int score in i)
+        {
+            Console.WriteLine("Student Score : "+ score);
+        }
+    }
+    static void Calculate_Average(int[] i)
+    {
+        int Total_Score = 0;
+        foreach (int score in i)
+        {
+            Total_Score += score;
+        }
+        double Average_Score = Total_Score / i.Length;
+        Console.WriteLine("Average_Score : "+Average_Score);
+    }
+}
+
+Type 2 (+ Used return concepts, Math concepts)
+internal class Program
+{
+    private static void Main(string[] args)
+    {
+        int[] Student_Scores = { 85, 90, 100, 70, 65, 40, 78 };
+        Display_Scores(Student_Scores);
+        Console.WriteLine("");
+        double Average_Score = Calculate_Average(Student_Scores);
+        int rounded_up = Convert.ToInt32(Math.Ceiling(Average_Score));
+        int rounded_down = Convert.ToInt32(Math.Floor(Average_Score));
+        Console.WriteLine("Average_Scores: "+Average_Score);
+        Console.WriteLine("Rounded_up: " + rounded_up);
+        Console.WriteLine("Rounded_down: " + rounded_down);
+        Console.WriteLine("So are you guys satisfied with it?");
+    }
+    static void Display_Scores(int[] i)
+    {
+        Console.WriteLine("Here is the list of the students scores");
+        foreach (int score in i)
+        {
+            Console.WriteLine("Student Score : "+ score);
+        }
+    }
+    static double Calculate_Average(int[] i)
+    {
+        int Total_Score = 0;
+        foreach (int score in i)
+        {
+            Total_Score += score;
+        }
+        return (double)Total_Score / i.Length;
+    }
+}

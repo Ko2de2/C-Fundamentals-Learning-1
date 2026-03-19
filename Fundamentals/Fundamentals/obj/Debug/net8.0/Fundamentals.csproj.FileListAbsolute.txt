@@ -1,0 +1,14 @@
+D:\Farren 2\Programming\C#\Fundamentals\Fundamentals\bin\Debug\net8.0\Fundamentals.exe
+D:\Farren 2\Programming\C#\Fundamentals\Fundamentals\bin\Debug\net8.0\Fundamentals.deps.json
+D:\Farren 2\Programming\C#\Fundamentals\Fundamentals\bin\Debug\net8.0\Fundamentals.runtimeconfig.json
+D:\Farren 2\Programming\C#\Fundamentals\Fundamentals\bin\Debug\net8.0\Fundamentals.dll
+D:\Farren 2\Programming\C#\Fundamentals\Fundamentals\bin\Debug\net8.0\Fundamentals.pdb
+D:\Farren 2\Programming\C#\Fundamentals\Fundamentals\obj\Debug\net8.0\Fundamentals.GeneratedMSBuildEditorConfig.editorconfig
+D:\Farren 2\Programming\C#\Fundamentals\Fundamentals\obj\Debug\net8.0\Fundamentals.AssemblyInfoInputs.cache
+D:\Farren 2\Programming\C#\Fundamentals\Fundamentals\obj\Debug\net8.0\Fundamentals.AssemblyInfo.cs
+D:\Farren 2\Programming\C#\Fundamentals\Fundamentals\obj\Debug\net8.0\Fundamentals.csproj.CoreCompileInputs.cache
+D:\Farren 2\Programming\C#\Fundamentals\Fundamentals\obj\Debug\net8.0\Fundamentals.dll
+D:\Farren 2\Programming\C#\Fundamentals\Fundamentals\obj\Debug\net8.0\refint\Fundamentals.dll
+D:\Farren 2\Programming\C#\Fundamentals\Fundamentals\obj\Debug\net8.0\Fundamentals.pdb
+D:\Farren 2\Programming\C#\Fundamentals\Fundamentals\obj\Debug\net8.0\Fundamentals.genruntimeconfig.cache
+D:\Farren 2\Programming\C#\Fundamentals\Fundamentals\obj\Debug\net8.0\ref\Fundamentals.dll
